@@ -33,7 +33,7 @@ export default function Main(props) {
 
   return (
     <Grid.Column>
-      <h1>Balances</h1>
+      <h1>Inventory</h1>
       {accounts.length === 0 ? (
         <Label basic color="yellow">
           No accounts to be shown
@@ -43,13 +43,13 @@ export default function Main(props) {
           <Table.Body>
             <Table.Row>
               <Table.Cell width={3} textAlign="right">
-                <strong>Name</strong>
+                <strong>Participant</strong>
               </Table.Cell>
               <Table.Cell width={10}>
                 <strong>Address</strong>
               </Table.Cell>
               <Table.Cell width={3}>
-                <strong>Balance</strong>
+                <strong>Inventory</strong>
               </Table.Cell>
             </Table.Row>
             {accounts.map(account => (
